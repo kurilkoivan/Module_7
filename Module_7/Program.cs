@@ -1,14 +1,35 @@
-﻿class Employee
+﻿class ppFood
 {
-    public string Name;
-    public int Age;
-    public int Salary;
+
+
 }
-class ProjectManager : Employee 
+class Fruits : ppFood
 {
-    private string ProjectName;
+    
+   
 }
-class Developer : Employee
+class Vegetables : ppFood
 {
-    private string ProgrammingLanguage;
+
+
+}
+class Potato : Vegetables 
+{
+
+}
+class Carrot : Vegetables
+{
+
+}
+class Apple : Fruits
+{
+    
+}
+class Banana : Fruits
+{
+    
+}
+class Pear : Fruits
+{
+    
 }
