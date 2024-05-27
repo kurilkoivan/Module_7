@@ -1,16 +1,25 @@
-﻿class Obj
+﻿class SmartHelper
 {
     private string name;
-    private string owner;
-    private int length;
-    private int count;
 
-
-    public Obj(string name, string ownerName, int objLength, int count)
+    public SmartHelper(string name)
     {
         this.name = name;
-        owner = ownerName;
-        length = objLength;
-        this.count = count;
     }
+
+    public void Greetings(string name)
+    {
+        Console.WriteLine("Привет, {0}, я интеллектуальный помощник {1}", name, this.name);
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        SmartHelper helper = new SmartHelper("Олег");
+        helper.Greetings("Грег");
+
+        Console.ReadKey();
+    }
+
 }
