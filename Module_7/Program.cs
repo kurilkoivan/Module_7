@@ -19,6 +19,7 @@ class DerivedClass : BaseClass
         Description = description;
         Counter = counter;
     }
+
     public string Description;
 
     public int Counter;
