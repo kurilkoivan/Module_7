@@ -1,35 +1,16 @@
-﻿class ppFood
+﻿class Obj
 {
+    private string name;
+    private string owner;
+    private int length;
+    private int count;
 
 
-}
-class Fruits : ppFood
-{
-    
-   
-}
-class Vegetables : ppFood
-{
-
-
-}
-class Potato : Vegetables 
-{
-
-}
-class Carrot : Vegetables
-{
-
-}
-class Apple : Fruits
-{
-    
-}
-class Banana : Fruits
-{
-    
-}
-class Pear : Fruits
-{
-    
+    public Obj(string name, string ownerName, int objLength, int count)
+    {
+        this.name = name;
+        owner = ownerName;
+        length = objLength;
+        this.count = count;
+    }
 }
