@@ -1,25 +1,25 @@
-﻿class SmartHelper
+﻿class BaseClass
 {
-    private string name;
+    protected string Name;
 
-    public SmartHelper(string name)
+    public BaseClass(string name)
     {
-        this.name = name;
-    }
-
-    public void Greetings(string name)
-    {
-        Console.WriteLine("Привет, {0}, я интеллектуальный помощник {1}", name, this.name);
+        Name = name;
     }
 }
-class Program
+
+class DerivedClass : BaseClass
 {
-    static void Main(string[] args)
+    public DerivedClass(string name, string description) : base(name)
     {
-        SmartHelper helper = new SmartHelper("Олег");
-        helper.Greetings("Грег");
-
-        Console.ReadKey();
+        Description = description;
     }
+    public DerivedClass(string name, string description,int counter) : base(name)
+    {
+        Description = description;
+        Counter = counter;
+    }
+    public string Description;
 
+    public int Counter;
 }
