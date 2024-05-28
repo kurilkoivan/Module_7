@@ -1,26 +1,15 @@
 ﻿class BaseClass
 {
-    protected string Name;
-
-    public BaseClass(string name)
+    public virtual void Display() 
     {
-        Name = name;
+        Console.WriteLine("Метод класса BaseClass");
     }
+    
 }
-
 class DerivedClass : BaseClass
 {
-    public DerivedClass(string name, string description) : base(name)
+    public override void Display() 
     {
-        Description = description;
+        Console.WriteLine("Метод класса DerivedClass");
     }
-    public DerivedClass(string name, string description,int counter) : base(name)
-    {
-        Description = description;
-        Counter = counter;
-    }
-
-    public string Description;
-
-    public int Counter;
 }
