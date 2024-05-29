@@ -1,13 +1,23 @@
-﻿public int this[int index]
+﻿class IndexingClass
 {
-    get
-    {
-        return array[index];
-    }
+    private int[] array;
 
-    set
+    public IndexingClass(int[] array)
     {
-        array[index] = value;
+        this.array = array;
+    }
+    public int this[int index]
+    {
+        get
+        {
+            return array[index];
+        }
+
+        set
+        {
+            array[index] = value;
+        }
     }
 }
+
 
