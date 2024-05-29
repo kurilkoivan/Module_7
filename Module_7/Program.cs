@@ -1,19 +1,13 @@
-﻿class Obj
+﻿public int this[int index]
 {
-    public int Value;
-    public static Obj operator +(Obj a, Obj b)
+    get
     {
-        return new Obj
-        {
-            Value = a.Value + b.Value
-        };
+        return array[index];
     }
-    public static Obj operator -(Obj a, Obj b)
+
+    set
     {
-        return new Obj
-        {
-            Value = a.Value - b.Value,
-        };
+        array[index] = value;
     }
 }
 
