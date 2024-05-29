@@ -1,15 +1,40 @@
-﻿class BaseClass
+﻿class A
 {
     public virtual void Display() 
     {
-        Console.WriteLine("Метод класса BaseClass");
+        Console.WriteLine("A");
     }
     
 }
-class DerivedClass : BaseClass
+class B : A
 {
-    public override void Display() 
+    internal virtual void Display()
     {
-        Console.WriteLine("Метод класса DerivedClass");
+        Console.WriteLine("B");
     }
+
+}
+class C : A
+{
+    public override void Display()
+    {
+        Console.WriteLine("D");
+    }
+
+}
+class D : B
+{
+    public new void Display()
+    {
+        Console.WriteLine("E");
+    }
+
+}
+class E : C
+{
+    public new void Display()
+    {
+        Console.WriteLine("Метод класса BaseClass");
+    }
+
 }
