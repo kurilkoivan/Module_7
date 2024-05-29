@@ -1,22 +1,27 @@
-﻿class IndexingClass
+﻿abstract class ComputerPart
 {
-    private int[] array;
-
-    public IndexingClass(int[] array)
+    public abstract void Work();
+    
+}
+class Processor : ComputerPart
+{
+    public override void Work()
     {
-        this.array = array;
+        
     }
-    public int this[int index]
+}
+class MotherBoard : ComputerPart
+{
+    public override void Work()
     {
-        get
-        {
-            return array[index];
-        }
 
-        set
-        {
-            array[index] = value;
-        }
+    }
+}
+class GraphicCard : ComputerPart
+{
+    public override void Work()
+    {
+
     }
 }
 
