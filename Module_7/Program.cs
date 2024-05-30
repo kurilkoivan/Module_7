@@ -1,28 +1,19 @@
-﻿abstract class ComputerPart
-{
-    public abstract void Work();
-    
-}
-class Processor : ComputerPart
-{
-    public override void Work()
-    {
-        
-    }
-}
-class MotherBoard : ComputerPart
-{
-    public override void Work()
-    {
+﻿using System.Runtime.CompilerServices;
 
-    }
-}
-class GraphicCard : ComputerPart
+class Helper
 {
-    public override void Work()
+    int num1 = 3;
+    int num2 = 58;
+    static void Swap(ref int num1,ref int num2) 
     {
+        int num3 = num1;
+        num2 = num1;
+        num2 = num3;
+        Console.WriteLine(num1); //58
+        Console.WriteLine(num2); //3
+    } 
 
-    }
 }
+
 
 
