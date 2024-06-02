@@ -8,7 +8,7 @@ abstract class Delivery
 }
 class ShopDelivery : Delivery
 {
-    internal new string address = "Орджоникидзе, 1";
+    internal new string address = "Кутуева 21, 1";
     internal new string Address
     {
         get
@@ -155,30 +155,17 @@ class Program
     }
     static void Main(string[] args)
     {
-<<<<<<< Updated upstream
         //Сделать перегрузку оператора + для сложения цен?
         Console.WriteLine("Добро пожаловать в магазин!");
         MyProducts myProducts = new();
         myProducts.AddProducts();
         var choosenDelivery = ChooseDelivery();
         Order<Delivery, MyProducts> order = new(choosenDelivery, myProducts);
-
-
-
-
         // Console.WriteLine("Ваш заказ успешно сформирован!\nСписок ваших продуктов: {0}\nТип доставки: {1}", order.TypesOfMyProducts, 
         // order.TypeOfDelivery);
-=======
-        Data data = new() 
-        { 
-            Name = "Запись", Length = 10, Version = 1, Array = new int[] {15, 30} 
-        };
-        Obj obj = new() 
-        { Name = "Стол", IsAlive = false, Weight = 15 };
-        
-        var dataCopy = data;
-        var objCopy = obj;
->>>>>>> Stashed changes
+
+
+
+
     }
 }
-
